@@ -63,12 +63,31 @@ aqt是qt的界面实现代码文件夹
 
 开始了解第一层结构
 
+anki/                         : anki 核心程序文件夹？
+aqt/                          : anki qt 界面程序
+designer/                     : qt 界面 源文件
+tests/                        : 测试程序文件夹
+web/                          : 疑似web 版程序源文件
+.gitignore                    : git  忽略文件数据
+.travix.yml                   : travix
+runanki                       : anki       启动文件
+tools/                        : 实用工具文件夹？
+anki-explore-note-hard_link.md: 笔记硬链接文件
+anki.1                        : man page usage?
+anki.desktop                  : desktop (图标)文件
+anki.png                      : anki 图标
+anki.xml                      : ?
+anki.xpm                      : ?
+LINCENSE                      : 协议说明文件
+LICENSE.logo                  : anki logo 协议文件
+Makefile                      : anki make 配置 文件
+pkgkey.asc                    : 公钥文件?
+README.contributing           : 贡献指南
+README.development            : 开发者使用说明
+README.md                     : anki git repo 说明
+requirements.txt              : python 依赖文件
 
-web/ 疑似web 版程序源文件
+确定主要关注对象为
+aqt/,anki/
 
-runanki anki 启动文件
-aqt/ anki qt 界面程序
-designer/ qt 界面 源文件
-tests/ 测试程序文件夹
-tools/ 实用工具文件夹？
 
