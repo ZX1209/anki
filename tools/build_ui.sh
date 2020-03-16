@@ -25,7 +25,7 @@ do
     py="aqt/forms/${base}.py"
     echo "	\"$base\"," >> $init
     echo "from . import $base" >> $temp
-    if [ $i -nt $py ]; then
+    if [ $i -nt $py ]; then # newer than
         echo " * "$py
         pyuic5 --from-imports $i -o $py
         # munge the output to use gettext

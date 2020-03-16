@@ -59,9 +59,9 @@ aqt是qt的界面实现代码文件夹
 
 # 2020-03-14
 
-确定版本为2.1.9
+## 确定版本为2.1.9
 
-开始了解第一层结构
+## 开始了解第一层结构
 
 anki/                         : anki 核心程序文件夹？
 aqt/                          : anki qt 界面程序
@@ -87,7 +87,62 @@ README.development            : 开发者使用说明
 README.md                     : anki git repo 说明
 requirements.txt              : python 依赖文件
 
-确定主要关注对象为
+## 确定主要关注文件
 aqt/,anki/
 
+# 2020-03-15 , 2020-03-16
+## 了解 aqt/ 结构
+`__pycache__`   : python 缓存文件
+forms/          : qt ui 界面 构造 程序源码
+`__init__.py`   : ?
+about.py        : 菜单栏/帮助/关于
+addcards.py     : ?
+addons.py       : ?
+browser.py      : ?
+clayout.py      : ?
+customstudy.py  : ?
+deckbrowser.py  : ?
+deckchooser.py  : ?
+deckconf.py     : ?
+downloader.py   : ?
+dyndeckconf.py  : ?
+editcurrent.py  : ?
+editor.py       : ?
+errors.py       : ?
+exporting.py    : ?
+fields.py       : ?
+importing.py    : dpkg 导入 | ?
+main.py         : 主窗口构造程序, 组装部件 setupmainwindow
+mediasrv.py     : 媒体服务器?
+                :  something
+                :
+modelchooser.py : ?
+models.py       : ?
+overview.py     : ?
+pinnedmodules.py: ?
+preferences.py  : ?
+profiles.py     : ?
+progress.py     : ?
+qt.py           : ?
+reviewer.py     : ?
+sound.py        : ?
+stats.py        : ?
+studydeck.py    : ?
+sync.py         : 远程同步 源码
+tagedit.py      : ?
+taglimit.py     : ?
+toolbar.py      : 工具栏 构建代码
+update.py       : 软件更新 
+utils.py        : 常用的Anki界面 组件与工具
+webview.py      : 网页试图 构建 QWebEnginePage
+winpaths.py     : 检索 win 系统路径
+
+
+## tools/build_ui.sh
+`从designer/*.ui 生成对应的 aqt/forms/*.py `
+pyuic5 生成 中间 py 源码文件
+perl 正则替换 指定特殊对象?
+
+## forms/
+界面构建模板 文件夹
 
