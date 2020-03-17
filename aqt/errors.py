@@ -82,21 +82,24 @@ your system's temporary folder may be incorrect.""")
             return
         if "disk I/O error" in error:
             return showWarning(_("""\
-An error occurred while accessing the database.
+                                    An error occurred while accessing the database.
 
-Possible causes:
+                                    Possible causes:
 
-- Antivirus, firewall, backup, or synchronization software may be \
-  interfering with Anki. Try disabling such software and see if the \
-  problem goes away.
-- Your disk may be full.
-- The Documents/Anki folder may be on a network drive.
-- Files in the Documents/Anki folder may not be writeable.
-- Your hard disk may have errors.
+                                    - Antivirus, firewall, backup, or synchronization software may be \
+                                    interfering with Anki. Try disabling such software and see if the \
+                                    problem goes away.
+                                    - Your disk may be full.
+                                    - The Documents/Anki folder may be on a network drive.
+                                    - Files in the Documents/Anki folder may not be writeable.
+                                    - Your hard disk may have errors.
 
-It's a good idea to run Tools>Check Database to ensure your collection \
-is not corrupt.
-"""))
+                                    It's a good idea to run Tools>Check Database to ensure your collection \
+                                    is not corrupt.
+                                    """))
+
+                                    
+                                    
 
         stdText = _("""\
 <h1>Error</h1>

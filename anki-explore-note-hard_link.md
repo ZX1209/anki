@@ -96,8 +96,8 @@ aqt/,anki/
 forms/          : qt ui 界面 构造 程序源码
 `__init__.py`   : ?
 about.py        : 菜单栏/帮助/关于
-addcards.py     : ?
-addons.py       : ?
+addcards.py     : 添加卡片页面
+addons.py       : 标签管理界面控制器
 browser.py      : ?
 clayout.py      : ?
 customstudy.py  : ?
@@ -107,10 +107,10 @@ deckconf.py     : ?
 downloader.py   : ?
 dyndeckconf.py  : ?
 editcurrent.py  : ?
-editor.py       : ?
-errors.py       : ?
-exporting.py    : ?
-fields.py       : ?
+editor.py       : 内容(卡片)编辑器
+errors.py       : 错误处理
+exporting.py    : 导出界面?
+fields.py       : onte 中的 域 ??
 importing.py    : dpkg 导入 | ?
 main.py         : 主窗口构造程序, 组装部件 setupmainwindow
 mediasrv.py     : 媒体服务器?
@@ -143,6 +143,13 @@ winpaths.py     : 检索 win 系统路径
 pyuic5 生成 中间 py 源码文件
 perl 正则替换 指定特殊对象?
 
+designer/ 中基本上只有架子,没有内容.毕竟qt主语言还是是C啊,跟python的集成才刚起步
+
 ## forms/
 界面构建模板 文件夹
 
+
+恩,这个构造挺像MVC的,
+designer/: model
+aqt/     : control
+anki     : view
